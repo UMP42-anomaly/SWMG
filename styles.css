@@ -1,34 +1,79 @@
-.body {
+body {
   margin: 0;
-  background-color: #222;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color-scheme: dark;
 }
 
-.header-up {
-  background-image: url(./images/header.jpg);
-  background-size: 100%;
-}
-
-.header-nav {
-  background-color: #aaa;
-  margin: 0;
-  padding: 10px 0;
-  border: 3px solid #222;
+header {
+  background-color: #181820;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .logo {
-  display: block;
-  margin: auto;
-  padding-top: 10%;
-  font-size: 120% 10%;
+  text-decoration: none;
   font-family: "Underdog";
-  font-weight: bold;
-  text-decoration: solid;
-  color: #fff;
-  text-align: center;
+  font-size: 45pt;
+  color: white;
+  margin: auto;
+  font-weight: bolder;
 }
 
-.creed {
-  margin: 0;
-  color: #ffee55;
-  font-family: "Underdog";
+/* COLORS */
+.red {
+  text-shadow: 0 0 2pt red;
+}
+.green {
+  text-shadow: 0 0 2pt lime;
+}
+.yellow {
+  text-shadow: 0 0 2pt yellow;
+}
+.blue {
+  text-shadow: 0 0 2pt cyan;
+}
+/* COLORS */
+
+.yt-icon {
+  margin-right: 20pt;
+}
+
+.section-spells {
+  display: grid;
+  align-items: center;
+  background-color: #080709;
+}
+
+.spells {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 70pt;
+  margin: auto;
+  margin-top: 10%;
+  text-shadow: 0 0 2pt whitesmoke;
+}
+
+.sponsor {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10% auto;
+  text-shadow: 0 0 0.5em red, 0 0 2em blue, 0 0 1em blue;
+}
+
+footer {
+  background-color: #101011;
+  margin-top: auto;
+  padding-bottom: 3%;
+}
+
+.bombs {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  text-shadow: 0 0 0.5em red;
+  text-decoration: none;
+  margin: auto 0;
 }
