@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: black;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   color-scheme: dark;
@@ -13,12 +13,13 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 0;
+  position: relative;
 }
 
 .logo {
   text-decoration: none;
   font-family: "Underdog";
-  font-size: 4vw;
+  font-size: 3.5vw;
   color: white;
   margin: auto;
   font-weight: bolder;
@@ -40,14 +41,35 @@ header {
 /* COLORS */
 
 .yt-icon {
-  margin-right: 1%;
+  margin-right: 2vw;
 }
 
 /* MAIN */
+main {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* VIDEO BG */
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.video-bg {
+  object-fit: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+/* SPELLS */
 .section-spells {
-  margin: 0;
   width: 70%;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -58,35 +80,39 @@ header {
 .spells {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 6.5vw;
+  font-size: 5vh;
   margin: auto;
   text-shadow: 0 0 0.3vw whitesmoke;
+  text-align: center;
 }
 
 .sponsor {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: auto;
-  font-size: 2.5vw;
+  font-size: 1.8vh;
   text-shadow: 0 0 0.5vw red, 0 0 2vw blue, 0 0 1vw blue;
+  text-align: center;
 }
 
 /* FOOTER */
 footer {
+  position: relative;
   background-color: #101011;
-  margin-top: auto;
-  padding-bottom: 3%;
+  margin-top: 0;
+  height: 7vh;
+  padding-left: 1vw;
+  padding-top: 2vh;
 }
 
 .bombs {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
-  text-shadow: 0 0 0.5vw red;
+  text-shadow: 0 0 0.5vh red;
   text-decoration: none;
-  font-size: 2.5vw;
-  margin: auto 0;
+  font-size: 1.5vh;
 }
 
 .bombs:hover {
-  text-shadow: 0 0 3vw red, 0 0 0.5vw white;
+  text-shadow: 0 0 3vh red, 0 0 0.5vw white;
 }
